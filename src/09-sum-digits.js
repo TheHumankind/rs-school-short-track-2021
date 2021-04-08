@@ -13,18 +13,19 @@
 function getSumOfDigits(n) {
   let arr = String(n).split('');
   let sum = 0;
-  while (true) {
+  for (let j = 0; j <= arr.length - 1; j++) {
     for (let i = 0; i <= arr.length - 1; i++) {
       sum += Number(arr[i]);
     }
     if (sum < 10) {
-      return sum;
+      break;
     }
     if (sum >= 10) {
       arr = String(sum).split('');
       sum = 0;
     }
   }
+  return sum;
 }
 
 module.exports = getSumOfDigits;
