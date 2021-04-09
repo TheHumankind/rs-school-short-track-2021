@@ -20,11 +20,5 @@ module.exports = {
     'no-plusplus': 'off',
     'func-names': 'off',
     'space-before-function-paren': 'off',
-    "prefer-destructuring": ["error", {
-      "AssignmentExpression": {
-        "array": false,
-        "object": false
-      }
-    }],
   },
 };
