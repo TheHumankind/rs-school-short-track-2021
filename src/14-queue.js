@@ -12,27 +12,16 @@
  */
 
 class Queue {
-  constructor () {
-    this.storage = {};
-    this.oldestIndex = 1;
-    this.newestIndex = 1;
-  }
-
   get size() {
-    return this.newestIndex - this.oldestIndex;
+    throw new Error('Not implemented');
   }
 
-  enqueue(element) {
-    this.storage[this.newestIndex] = element;
-    this.newestIndex++;
+  enqueue(/* element */) {
+    throw new Error('Not implemented');
   }
 
   dequeue() {
-    const oldestIndex = this.oldestIndex;
-    const deletedData = this.storage[oldestIndex];
-    delete this.storage[oldestIndex];
-    this.oldestIndex++;
-    return deletedData;
+    throw new Error('Not implemented');
   }
 }
 
